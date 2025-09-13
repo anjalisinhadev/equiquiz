@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Civic & Economic Literacy Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="quiz-container">
+    <!-- Start Screen -->
+    <div id="start-screen" class="active screen">
+      <h1>EquiQuiz</h1>
+      <p>Test your knowledge of civics and economics!</p>
+      <button id="start-button" class="button">Start Quiz</button>
+    </div>
+
+    <!-- Quiz Screen -->
+    <div id="quiz-screen" class="screen hidden">
+      <div class="quiz-header">
+        <span id="question-counter" aria-label="Question counter">Question <span id="current-question">1</span>/<span id="total-questions">0</span></span>
+        <span>Score: <span id="score">0</span></span>
+      </div>
+      <div class="progress">
+        <div id="progress-bar"></div>
+      </div>
+      <div id="question-container">
+        <h2 id="question-text">Question text</h2>
+        <div id="answers-container"></div>
+      </div>
+      <div id="explanation" class="explanation"></div>
+      <button id="next-button" class="button hidden">Next Question</button>
+    </div>
+
+    <!-- Result Screen -->
+    <div id="result-screen" class="screen hidden">
+      <h2>Quiz Complete!</h2>
+      <p>Your final score: <span id="final-score">0</span></p>
+      <p id="feedback-message"></p>
+<div class="charts-group">
+  <div id="score-chart-container" class="chart-container">
+    <h3>Score Distribution</h3>
+    <canvas id="score-chart"></canvas>
+  </div>
+
+  <div id="question-chart-container" class="chart-container">
+    <h3>Your Performance by Question</h3>
+    <canvas id="question-chart"></canvas>
+  </div>
+</div>
+<button id="restart-button" class="button">Restart Quiz</button>
+</div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

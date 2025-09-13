@@ -1,0 +1,61 @@
+# Civic & Economic Literacy Quiz -- EquiQuiz
+
+An interactive quiz application that tests your knowledge of civic and economic concepts with beautiful data visualization.
+
+## Features
+
+- 🎯 Interactive multiple-choice questions
+- 📊 Score tracking with visual feedback
+- 📈 Chart.js integration for result visualization
+- 📱 Responsive design for all devices
+- 🎨 Clean, modern UI with smooth animations
+- 🔄 Restart functionality to try again
+
+## Quiz Topics
+
+- Participatory budgeting
+- GDP and economic indicators
+- Public goods and services
+- Taxation and public funding
+- Inflation and economic concepts
+
+## How to Use
+
+1. Open `index.html` in your web browser
+2. Click "Start Quiz" to begin
+3. Answer all 5 questions by selecting the correct option
+4. View your results with detailed charts
+5. Click "Restart Quiz" to try again
+
+## Technical Details
+
+- Built with vanilla JavaScript (no frameworks)
+- Uses Chart.js for data visualization
+- Responsive CSS Grid and Flexbox layout
+- Modern ES6+ JavaScript features
+- Clean, semantic HTML5 structure
+
+## Browser Support
+
+This quiz works on all modern browsers including:
+- Chrome 60+
+- Firefox 60+
+- Safari 12+
+- Edge 79+
+
+## Customization
+
+### Adding New Questions
+
+Edit the `quizQuestions` array in `script.js`:
+
+```javascript
+{
+  question: "Your question here?",
+  answers: [
+    { text: "Option 1", correct: false },
+    { text: "Option 2", correct: true },
+    // ... more options
+  ],
+  explanation: "Explanation of the correct answer"
+}
